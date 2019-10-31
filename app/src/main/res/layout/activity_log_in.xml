@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".LogIn">
+
+    <TextView
+        android:id="@+id/login1"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="SIGN IN"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light">
+    </TextView>
+    <TextView
+        android:id="@+id/email"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:fontFamily="sans-serif-light"
+        android:textSize="25sp"
+        android:layout_below="@id/login1">
+    </TextView>
+    <EditText
+        android:id="@+id/email1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email">
+    </EditText>
+    <TextView
+        android:id="@+id/password"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="23sp"
+        android:layout_below="@id/email1"
+        android:fontFamily="sans-serif-light" >
+    </TextView>
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:inputType="textPassword">
+    </EditText>
+    <TextView
+        android:id="@+id/tvforget"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I can't access my account"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:layout_below="@id/password1"
+        android:fontFamily="sans-serif-light"
+        android:clickable="true">
+    </TextView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvforget"
+        android:layout_marginTop="30dp"
+        android:background="#C0C0C0"
+        android:clickable="true"
+        android:fontFamily="sans-serif-light"
+        android:text="Sign In"
+        android:textColor="#000000"
+        android:textSize="20dp"></Button>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/button1"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:clickable="true"
+        android:fontFamily="sans-serif-light"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"></Button>
+    <TextView
+        android:id="@+id/tv1"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="----------OR----------"
+        android:textSize="23sp"
+        android:layout_below="@id/button2"
+        android:fontFamily="sans-serif-light" >
+    </TextView>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="20dp"
+        android:background="#000080"
+        android:clickable="true"
+        android:fontFamily="sans-serif-light"
+        android:text="Sign In With Facebook"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"></Button>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/button3"
+        android:layout_marginTop="20dp"
+        android:background="#FF0000"
+        android:clickable="true"
+        android:fontFamily="sans-serif-light"
+        android:text="Sign In With Google"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"></Button>
+
+
+</RelativeLayout>
